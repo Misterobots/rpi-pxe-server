@@ -9,7 +9,7 @@ set -e
 WINDOWS_IMAGE_PATH=$1
 
 mkdir -p /data/public/windows-image
-mount "$WINDOWS_IMAGE_PATH" /data/public/windows-image
+# mount "$WINDOWS_IMAGE_PATH" /data/public/windows-image
 mkwinpeimg --iso --windows-dir=/data/public/windows-image /data/tftp/winpe.iso
 
 mkdir -p /data/tftp/pxelinux.cfg
